@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #003580, #0071c2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4px 12px;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    transition: 0.25s;
+}
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #003580;
+}
+
+/* Login Card */
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    width: 380px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 0.7s ease;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #003580;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #003580;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdd2d8;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #003580;
+    box-shadow: 0 0 5px rgba(0, 53, 128, 0.3);
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    background: #003580;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover {
+    background: #0050a5;
+}
+
+/* Footer Text */
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.signup-text a {
+    color: #003580;
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

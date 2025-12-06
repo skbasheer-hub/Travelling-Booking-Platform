@@ -1,0 +1,182 @@
+*{
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  background:#f6f8fb;
+  padding-top:80px;
+}
+
+/* HEADER */
+.dash-header{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:70px;
+  background:#003a6b;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 30px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+
+.logo{
+  font-size:20px;
+  font-weight:600;
+}
+.logo span{ color:#febb02; }
+
+/* NAVIGATION */
+.dash-nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:15px;
+}
+.logout-btn{
+  background:#febb02;
+  padding:6px 12px;
+  border-radius:6px;
+  color:#003a6b !important;
+}
+
+/* MENU BUTTON */
+.menu-btn{
+  background:transparent;
+  border:0;
+  color:#fff;
+  font-size:26px;
+  cursor:pointer;
+  display:none;
+}
+
+@media(max-width:900px){
+  .menu-btn{ display:block; }
+  .dash-nav{ display:none; }
+}
+
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:260px;
+  height:100%;
+  background:#003a6b;
+  padding:20px;
+  color:white;
+  transition:0.3s;
+  z-index:2000;
+}
+.sidebar.open{ left:0; }
+
+.side-title{
+  font-size:20px;
+  margin-bottom:20px;
+  color:#febb02;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:12px 0;
+  color:white;
+  text-decoration:none;
+  background:rgba(255,255,255,0.15);
+  border-radius:8px;
+}
+.sidebar a:hover{
+  background:rgba(255,255,255,0.3);
+}
+
+/* OVERLAY */
+.overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  z-index:1500;
+}
+.overlay.show{ display:block; }
+
+/* DASHBOARD CONTENT */
+.dashboard{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.welcome{
+  font-size:26px;
+  margin-bottom:20px;
+}
+
+/* STAT CARDS */
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.stat-card{
+  background:#fff;
+  padding:22px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+.stat-card h3{
+  font-size:26px;
+  color:#003a6b;
+}
+
+/* QUICK ACTIONS */
+.section-title{
+  margin:28px 0 12px;
+  font-size:20px;
+}
+.quick-actions{
+  display:flex;
+  gap:20px;
+}
+.action-card{
+  flex:1;
+  background:#003a6b;
+  color:white;
+  padding:16px;
+  text-align:center;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:18px;
+}
+.action-card:hover{
+  background:#005597;
+}
+
+/* RECENT BOOKINGS */
+.recent-list{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.recent-item{
+  background:#fff;
+  padding:18px;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.view-btn{
+  background:#febb02;
+  padding:8px 14px;
+  border:0;
+  border-radius:6px;
+  font-weight:600;
+  cursor:pointer;
+}

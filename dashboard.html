@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | TravelBook</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="dash-header">
+  <button id="menuToggle" class="menu-btn">☰</button>
+
+  <div class="logo">Travel<span>Book</span> Dashboard</div>
+
+  <nav class="dash-nav">
+    <a href="travel.html">Home</a>
+    <a href="#">My Trips</a>
+    <a href="#">Profile</a>
+    <a href="login.html" class="logout-btn">Logout</a>
+  </nav>
+</header>
+
+<!-- SIDEBAR MENU -->
+<div id="sidebar" class="sidebar">
+  <h3 class="side-title">Menu</h3>
+  <a href="travel.html">🏠 Home</a>
+  <a href="#">📖 My Trips</a>
+  <a href="#">👤 Profile</a>
+  <a href="login.html">🚪 Logout</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+<!-- DASHBOARD CONTENT -->
+<section class="dashboard">
+  
+  <h2 class="welcome">Welcome back, Traveller ✈️</h2>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card"><h3>3</h3><p>Upcoming Trips</p></div>
+    <div class="stat-card"><h3>12</h3><p>Total Bookings</p></div>
+    <div class="stat-card"><h3>2</h3><p>Pending Payments</p></div>
+    <div class="stat-card"><h3>5</h3><p>Saved Places</p></div>
+  </div>
+
+  <!-- QUICK ACTIONS -->
+  <h3 class="section-title">Quick Actions</h3>
+  <div class="quick-actions">
+    <a class="action-card" href="travel.html#stays">🏨 Book a Hotel</a>
+    <a class="action-card" href="travel.html#flights">✈️ Book a Flight</a>
+    <a class="action-card" href="travel.html#cabs">🚕 Book a Cab</a>
+  </div>
+
+  <!-- RECENT BOOKINGS -->
+  <h3 class="section-title">Recent Bookings</h3>
+
+  <div class="recent-list">
+
+    <div class="recent-item">
+      <div>
+        <h4>Seaside Resort – Goa</h4>
+        <p>Booked on: 12 Nov 2025 | Status: Confirmed</p>
+      </div>
+      <button class="view-btn">View</button>
+    </div>
+
+    <div class="recent-item">
+      <div>
+        <h4>Flight BLR → DEL</h4>
+        <p>Booked on: 10 Nov 2025 | Status: Confirmed</p>
+      </div>
+      <button class="view-btn">View</button>
+    </div>
+
+    <div class="recent-item">
+      <div>
+        <h4>SUV Cab – Jaipur</h4>
+        <p>Booked on: 5 Nov 2025 | Status: Completed</p>
+      </div>
+      <button class="view-btn">View</button>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
